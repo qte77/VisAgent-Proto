@@ -22,7 +22,8 @@ For version history have a look at the [CHANGELOG](CHANGELOG.md).
 ### Question
 
 ```sh
-Can you perform object detection to identify the different sections of the conveyor belt system in the image, focusing on distinguishing between straight and curved parts?
+Can you perform object detection to identify the different sections of the conveyor belt system
+in the image,focusing on distinguishing between straight and curved parts?
 ```
 
 <img src="assets/images/landing.ai_depositphotos_74665111-stock-photo-metal-roller-conveyor-system.jpg" alt="metal-roller-conveyor-system" title="metal-roller-conveyor-system" width="60%" />
@@ -30,7 +31,12 @@ Can you perform object detection to identify the different sections of the conve
 ### Answer
 
 ```sh
-I've analyzed the image and detected the conveyor belt sections. Here are the results: - Curved sections detected: 5 - Straight sections detected: 0 - Total length of curved sections: 1668667.8016 (in pixel units squared) A visualization of the detected sections has been saved as 'conveyor_belt_detection.jpg'. Would you like to see this visualization or do you need any further analysis?
+I've analyzed the image and detected the conveyor belt sections. Here are the results:
+- Curved sections detected: 5
+- Straight sections detected: 0
+- Total length of curved sections: 1668667.8016 (in pixel units squared)
+A visualization of the detected sections has been saved as 'conveyor_belt_detection.jpg'.
+Would you like to see this visualization or do you need any further analysis?
 
 [{'straight_sections_count': 0,
   'curved_sections_count': 5,
