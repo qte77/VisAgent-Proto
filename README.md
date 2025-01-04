@@ -1,6 +1,6 @@
-# <project_name>
+# VisAgent-Proto
 
-Prototype of using [va.landing.ai](https://va.landing.ai) locally with python scripts.
+Prototype of a Vision Agent using [va.landing.ai](https://va.landing.ai) locally with python scripts.
 
 ![Version](https://img.shields.io/badge/version-0.0.0-8A2BE2)
 [![CodeFactor](https://www.codefactor.io/repository/github/qte77/VisAgent-Proto/badge)](https://www.codefactor.io/repository/github/qte77/VisAgent-Proto)
@@ -43,7 +43,8 @@ I've analyzed the image and detected the conveyor belt sections. Here are the re
 
 ### Deployment
 
-This app has been deployed with the above question prompt as task. You can use [the streamlit app on landing.ai](https://qbwc15b-streamlit.sandbox.landing.ai?embed=True) or the following API request.
+This app has been deployed with the above question prompt as task.
+You can use [the streamlit app on landing.ai](https://qbwc15b-streamlit.sandbox.landing.ai?embed=True) or the following API request.
 
 ```sh
 curl -X 'POST' \
