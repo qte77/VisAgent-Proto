@@ -95,7 +95,7 @@ jobs:
         dir="${{ env.SITE_DIR }}/${{ env.IMG_DIR }}"
         if [ -d "${{ env.IMG_DIR }}" ]; then
           mkdir -p "${dir}"
-          cp "${{ env.IMG_DIR }}/*" "${dir}"
+          cp "${{ env.IMG_DIR }}"/* "${dir}"
         fi
 
 #    - name: Push to gh-pages
