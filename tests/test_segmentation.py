@@ -3,8 +3,11 @@ This module contains tests for the image segmentation functionality.
 """
 
 import os
-import pytest
-from src.utils.segmentation import segment_and_visualize, segment_conveyor_belt, segment_conveyor_belts
+from src.utils.segmentation import (
+    segment_and_visualize,
+    segment_conveyor_belt,
+    segment_conveyor_belts
+)
 from .test_utils import get_test_image_path
 
 
@@ -65,4 +68,3 @@ def test_segment_and_visualize():
     assert isinstance(result['segmentation_results'], list), "segmentation_results should be a list"
     assert isinstance(result['visualized_image_path'], str), "visualized_image_path should be a string"
     assert os.path.exists(result['visualized_image_path']), "Output image file should exist"
-

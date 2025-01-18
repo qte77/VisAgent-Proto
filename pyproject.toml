@@ -8,8 +8,9 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "pydantic>=2.10.5",
-    "loguru==0.7.3"
+    "loguru==0.7.3",
+    # "pydantic>=2.10.5"
+    "vision_agent<=0.2.230"
 ]
 
 [dependency-groups]

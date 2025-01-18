@@ -15,4 +15,3 @@ def get_test_image_path(image_name):
         str: Full path to the test image.
     """
     return os.path.join(os.path.dirname(os.path.dirname(__file__)), 'assets', 'images', image_name)
-
