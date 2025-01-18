@@ -9,8 +9,9 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "loguru==0.7.3",
-    # "pydantic>=2.10.5"
-    "vision_agent<=0.2.230"
+    # "pydantic>=2.10.5",
+    "opencv-python-headless<=4.11.0.86",
+    "vision-agent<=0.2.230" # vision_agent
 ]
 
 [dependency-groups]
