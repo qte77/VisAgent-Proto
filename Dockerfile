@@ -4,12 +4,12 @@ ARG USER="appuser"
 
 
 # Stage 1: Builder Image
-FROM python:${PYTHON_VERSION}-slim AS AS builder
+FROM python:${PYTHON_VERSION}-slim AS builder
 LABEL author="qte77"
 LABEL builder=true
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
-COPY pyproject.toml uv.lock ./
+COPY pyproject.toml uv.lock /
 RUN set -xe \
     && pip install --no-cache-dir uv \
     && uv sync --frozen

@@ -1,5 +1,4 @@
-Changelog
-===
+# Changelog
 
 All notable changes to this project will be documented in this file.
 
@@ -15,6 +14,8 @@ Types of changes:
 - `Fixed` for any bug fixes.
 - `Security` in case of vulnerabilities.
 
-[Unreleased]
----
+## [Unreleased]
 
+### Added
+
+- `assets/images` containing royalty free stock machinery photos from [depositphotos.com](https://depositphotos.com/photos/conveyor-machine.html)
