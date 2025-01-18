@@ -70,7 +70,7 @@ curl -X 'POST' \
 
 ## Testing
 
-Run tests using: `pytest tests/`
+Run tests using: `uv run pytest`
 
 ## Documentation
 
@@ -95,5 +95,5 @@ Run tests using: `pytest tests/`
 ```sh
 TODO
 ```
-## TODO
 
+## TODO
