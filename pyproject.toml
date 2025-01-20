@@ -11,7 +11,7 @@ dependencies = [
     "loguru==0.7.3",
     # "pydantic>=2.10.5",
     "opencv-python-headless<=4.11.0.86",
-    "vision-agent<=0.2.230" # vision_agent
+    "vision-agent<=0.2.231" # vision_agent
 ]
 
 [dependency-groups]
