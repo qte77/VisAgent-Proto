@@ -3,7 +3,9 @@ This module contains tests for the conveyor detection functionality.
 """
 
 import os
+
 from utils.conveyor_detection import detect_conveyor_sections
+
 from .test_utils import get_test_image_path
 
 
@@ -41,10 +43,10 @@ def test_detect_conveyor_sections():
     assert isinstance(result["curved_sections_count"], int), (
         "curved_sections_count should be an integer"
     )
-    assert isinstance(result["total_straight_length"], (int, float)), (
+    assert isinstance(result["total_straight_length"], int | float), (
         "total_straight_length should be a number"
     )
-    assert isinstance(result["total_curved_length"], (int, float)), (
+    assert isinstance(result["total_curved_length"], int | float), (
         "total_curved_length should be a number"
     )
     assert isinstance(result["visualization_path"], str), (

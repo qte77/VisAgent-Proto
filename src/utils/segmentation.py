@@ -4,16 +4,16 @@
 This module provides functions for image segmentation tasks.
 """
 
+import numpy as np
 from vision_agent.tools import florence2_sam2_image, overlay_segmentation_masks
-from .models import SegmentationResult, Segmentation, BoundingBox
+
 from .image_processing import (
+    filter_detections,
     load_and_process_image,
     save_processed_image,
-    filter_detections,
 )
 from .logging_config import logger
-from typing import Dict, Union, List
-import numpy as np
+from .models import BoundingBox, Segmentation, SegmentationResult
 
 
 def segment_and_visualize(image_path: str) -> SegmentationResult:
@@ -64,7 +64,7 @@ def segment_and_visualize(image_path: str) -> SegmentationResult:
     )
 
 
-def segment_conveyor_belt(image_path: str) -> Dict[str, Union[List[Segmentation], str]]:
+def segment_conveyor_belt(image_path: str) -> dict[str, list[Segmentation] | str]:
     """
     # Segment conveyor belt
 
@@ -74,7 +74,8 @@ def segment_conveyor_belt(image_path: str) -> Dict[str, Union[List[Segmentation]
         image_path (str): Path to the input image
 
     Returns:
-        Dict[str, Union[List[Segmentation], str]]: Segmentation result and output image path
+        Dict[str, Union[List[Segmentation], str]]:
+        Segmentation result and output image path
     """
     logger.info("Starting conveyor belt segmentation")
     image = load_and_process_image(image_path)

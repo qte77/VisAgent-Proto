@@ -6,13 +6,14 @@ It demonstrates the usage of various functions from the utils package.
 """
 
 import argparse
+
 from utils.conveyor_detection import detect_conveyor_sections
+from utils.logging_config import logger
 from utils.segmentation import (
     segment_and_visualize,
     segment_conveyor_belt,
     segment_conveyor_belts,
 )
-from utils.logging_config import logger
 
 
 def process_image(image_path, tasks):

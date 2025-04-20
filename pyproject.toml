@@ -9,18 +9,15 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "loguru==0.7.3",
-    # "pydantic>=2.10.5",
+    "pydantic>=2.11.3",
     "opencv-python-headless<=4.11.0.86",
-    "vision-agent<=0.2.230" # vision_agent
+    "vision-agent<=1.1.4" # vision_agent
 ]
 
 [dependency-groups]
 dev = [
-    "pytest>=7.0.0",
-    "ruff>=0.8.0",
-    # "pytest-asyncio==0.15.1",
-    # "pytest-mock==3.6.1"
-    # "git-changelog>=2.5.2"
+    "pytest>=8.3.5",
+    "ruff>=0.11.6",
 ]
 docs = [
     "griffe>=1.5.1",
@@ -39,7 +36,7 @@ docs = [
 
 [tool.uv]
 package = true
-exclude-newer = "2025-01-18T00:00:00Z"
+exclude-newer = "2025-04-20T00:00:00Z"
 
 # https://docs.astral.sh/ruff/configuration/
 [tool.ruff]
@@ -52,6 +49,22 @@ docstring-code-format = true
 [tool.ruff.lint]
 ignore = ["E203"]  # Whitespace before ':'
 unfixable = ["B"]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # isort
+    "I",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.isort]
+known-first-party = ["scripts", "src", "tests"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
