@@ -12,6 +12,9 @@ setup_dev: ## Install uv and developer dependencies
 	@pip install uv
 	@uv sync --all-groups --frozen
 
+run_cli: ## Run app on CLI only
+	@uv run python -m src.app
+
 ruff: ## Lint: Format and check with ruff
 	@uv run ruff format
 	@uv run ruff check --fix

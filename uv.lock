@@ -2028,6 +2028,7 @@ source = { editable = "." }
 dependencies = [
     { name = "loguru" },
     { name = "opencv-python-headless" },
+    { name = "pydantic" },
     { name = "vision-agent" },
 ]
 
@@ -2051,6 +2052,7 @@ docs = [
 requires-dist = [
     { name = "loguru", specifier = "==0.7.3" },
     { name = "opencv-python-headless", specifier = "<=4.11.0.86" },
+    { name = "pydantic", specifier = ">=2.11.3" },
     { name = "vision-agent", specifier = "<=1.1.4" },
 ]
 
