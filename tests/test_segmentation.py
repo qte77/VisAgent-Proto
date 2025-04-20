@@ -3,11 +3,13 @@ This module contains tests for the image segmentation functionality.
 """
 
 import os
+
 from utils.segmentation import (
     segment_and_visualize,
     segment_conveyor_belt,
     segment_conveyor_belts,
 )
+
 from .test_utils import get_test_image_path
 
 
@@ -55,7 +57,10 @@ def test_segment_conveyor_belts():
     This test checks if the function correctly segments multiple conveyor belts
     and the spiral cooling system in the given image.
     """
-    test_image = "landing.ai_depositphotos_311935464-stock-photo-large-automated-round-conveyor-machine.jpg"
+    test_image = (
+        "landing.ai_depositphotos_311935464-stock-photo-large-automated-round"
+        "-conveyor-machine.jpg"
+    )
     image_path = get_test_image_path(test_image)
     result = segment_conveyor_belts(image_path)
 
@@ -71,7 +76,10 @@ def test_segment_and_visualize():
     This test checks if the function correctly segments and visualizes
     objects in the given image.
     """
-    test_image = "landing.ai_depositphotos_119075536-stock-photo-loading-iron-ore-conveyor-machine.jpg"
+    test_image = (
+        "landing.ai_depositphotos_119075536-stock-photo-loading"
+        "-iron-ore-conveyor-machine.jpg"
+    )
     image_path = get_test_image_path(test_image)
     result = segment_and_visualize(image_path)
 

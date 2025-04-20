@@ -4,14 +4,15 @@
 This module provides functions for detecting conveyor sections in images.
 """
 
-from vision_agent.tools import owl_v2_image, overlay_bounding_boxes
-from .models import ConveyorSectionResult
+from vision_agent.tools import overlay_bounding_boxes, owl_v2_image
+
 from .image_processing import (
+    calculate_length,
     load_and_process_image,
     save_processed_image,
-    calculate_length,
 )
 from .logging_config import logger
+from .models import ConveyorSectionResult
 
 
 def detect_conveyor_sections(image_path: str) -> ConveyorSectionResult:

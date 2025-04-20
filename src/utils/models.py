@@ -4,9 +4,8 @@
 This module defines Pydantic models for structured data used in the application.
 """
 
-from pydantic import BaseModel
 import numpy as np
-from typing import List
+from pydantic import BaseModel
 
 
 class BoundingBox(BaseModel):
@@ -68,5 +67,5 @@ class SegmentationResult(BaseModel):
     Represents the result of image segmentation and visualization.
     """
 
-    segmentation_results: List[Segmentation]
+    segmentation_results: list[Segmentation]
     visualized_image_path: str

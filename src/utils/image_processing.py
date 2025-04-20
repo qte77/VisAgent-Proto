@@ -4,9 +4,11 @@
 This module provides utility functions for image processing tasks.
 """
 
+from typing import Any
+
 import numpy as np
-from typing import Any, Dict, List
 from vision_agent.tools import load_image, save_image
+
 from .logging_config import logger
 
 
@@ -45,8 +47,8 @@ def save_processed_image(image: np.ndarray, output_path: str) -> str:
 
 
 def filter_detections(
-    detections: List[Dict[str, Any]], threshold: float = 0.5
-) -> List[Dict[str, Any]]:
+    detections: list[dict[str, Any]], threshold: float = 0.5
+) -> list[dict[str, Any]]:
     """
     # Filter detections
 
@@ -63,7 +65,7 @@ def filter_detections(
     return [d for d in detections if d["score"] > threshold]
 
 
-def calculate_length(section: Dict[str, Any], width: int, height: int) -> float:
+def calculate_length(section: dict[str, Any], width: int, height: int) -> float:
     """
     # Calculate length
 
