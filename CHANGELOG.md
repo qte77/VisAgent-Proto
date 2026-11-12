@@ -16,6 +16,10 @@ Types of changes:
 
 ## [Unreleased]
 
+### Deprecated
+
+- Repository archived: README states it is no longer maintained and points to `qte77/vlm-toolkit` and `qte77/cc-senses-plugin` for local VLM work.
+
 ### Added
 
 - `assets/images` containing royalty free stock machinery photos from [depositphotos.com](https://depositphotos.com/photos/conveyor-machine.html)
